@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "helloServlet", urlPatterns = { "/" }, loadOnStartup = 1)
+@WebServlet(name = "helloServlet", urlPatterns = { "/form" }, loadOnStartup = 1)
 public class HelloServlet extends HttpServlet {
 	private static final String DEFAULT_USER = "Guest";
 
