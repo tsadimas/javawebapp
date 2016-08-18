@@ -3,6 +3,7 @@ package gr.hua.dit.mywebapp1;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,6 +34,11 @@ public class HelloServlet extends HttpServlet {
 				.append("            <input type=\"text\" name=\"user\"/><br/>\r\n")
 				.append("            <input type=\"submit\" value=\"Submit\"/>\r\n").append("        </form>\r\n")
 				.append("    </body>\r\n").append("</html>\r\n");
+
+		ServletContext c = this.getServletContext();
+
+		writer.append("settingOne: ").append(c.getInitParameter("settingOne")).append(", settingTwo: ")
+				.append(c.getInitParameter("settingTwo"));
 
 	}
 
