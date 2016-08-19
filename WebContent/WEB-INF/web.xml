@@ -21,7 +21,7 @@
 		<servlet-name>JSPServlet</servlet-name>
 		<url-pattern>/hello</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>JSPFormServlet</servlet-name>
 		<jsp-file>/jsp/jspform.jsp</jsp-file>
@@ -30,5 +30,21 @@
 		<servlet-name>JSPFormServlet</servlet-name>
 		<url-pattern>/jspform</url-pattern>
 	</servlet-mapping>
+	
+
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>/jsp/main/*</url-pattern>
+			<url-pattern>/jsp/main/*</url-pattern>
+			<page-encoding>UTF-8</page-encoding>
+			<scripting-invalid>false</scripting-invalid>
+			<include-prelude>/WEB-INF/jspf/header.jspf</include-prelude>
+			<include-coda>/WEB-INF/jspf/footer.jspf</include-coda>
+			<trim-directive-whitespaces>true</trim-directive-whitespaces>
+			<default-content-type>text/html</default-content-type>
+		</jsp-property-group>
+	</jsp-config>
+
 
 </web-app>
