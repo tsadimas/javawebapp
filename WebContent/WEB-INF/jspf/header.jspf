@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bootstrap-4/dist/css/bootstrap.css"/>
 <title>Insert title here</title>
 </head>
 <body>
-<div style="background-color:#ccc; height:100px;" >
-This is a global header!
-</div>
+<nav class="nav">
+  <a class="nav-link active" href="#">This is a global header!</a>
+</nav>

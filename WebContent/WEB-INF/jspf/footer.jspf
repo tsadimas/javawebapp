@@ -1,5 +1,5 @@
-<div style="background-color:#9FF781; height:100px;" >
-This is a global footer!
-</div>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active">This is a global footer!</li>
+</ol>
 </body>
 </html>

@@ -1,1 +1,3 @@
-other content
+<div class="container">
+another content
+</div>
